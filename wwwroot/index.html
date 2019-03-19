@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Cadastro de Produtos</title>
     <style>
@@ -29,12 +31,14 @@
         }
     </style>
 </head>
-<body>
+<body class="p-5">
     <h1>Cadastro de Produtos</h1>
     <h3>Adicione o Novo Produto</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="<Nome do Produto>">
-        <input type="submit" value="Adicionar">
+        <input class="form-control" type="text" id="add-name" placeholder="<Nome do Produto>">
+        <button type="submit"  class="btn btn-success" >Adicionar
+                <i class="fas fa-save"></i>
+        </button>
     </form>
 
     <div id="spoiler">
