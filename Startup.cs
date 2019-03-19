@@ -57,11 +57,15 @@ namespace TodoApi
 
             app.UseHttpsRedirection();
 
-            app.UseSwagger();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            
+
+                app.UseSwagger();
                 app.UseSwaggerUI(c =>
                 {
                     c.RoutePrefix = "swagger";
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Demo JWT Api");
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Mike API");
                 });
 
 

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>To-do CRUD</title>
+    <title>Cadastro de Produtos</title>
     <style>
         input[type='submit'], button, [aria-label] {
             cursor: pointer;
@@ -30,11 +30,11 @@
     </style>
 </head>
 <body>
-    <h1>To-do CRUD</h1>
-    <h3>Add</h3>
+    <h1>Cadastro de Produtos</h1>
+    <h3>Adicione o Novo Produto</h3>
     <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
-        <input type="text" id="add-name" placeholder="New to-do">
-        <input type="submit" value="Add">
+        <input type="text" id="add-name" placeholder="<Nome do Produto>">
+        <input type="submit" value="Adicionar">
     </form>
 
     <div id="spoiler">
@@ -52,8 +52,8 @@
 
     <table>
         <tr>
-            <th>Is Complete</th>
-            <th>Name</th>
+            <th></th>
+            <th>Produtos Cadastrados</th>
             <th></th>
             <th></th>
         </tr>
