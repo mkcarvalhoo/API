@@ -29,7 +29,8 @@ function getData() {
 
       getCount(data.length);
 
-      $.each(data, function(key, item) {
+      $.each(data, function(key, item) 
+      {
         const tr = $("<tr></tr>")
           .append(
             $("<td></td>").append(
@@ -43,14 +44,14 @@ function getData() {
           .append($("<td></td>").text(item.name))
           .append(
             $("<td></td>").append(
-              $("<button>Edit</button>").on("click", function() {
+              $('<button class="btn btn-primary btn-sm">Edit</button>').on("click", function() {
                 editItem(item.id);
               })
             )
           )
           .append(
             $("<td></td>").append(
-              $("<button>Delete</button>").on("click", function() {
+              $('<button class="btn btn-danger btn-sm">Delete</button>').on("click", function() {
                 deleteItem(item.id);
               })
             )
